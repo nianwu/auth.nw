@@ -56,13 +56,13 @@ namespace identity_server_4
                 .AddConfigurationStore(options =>
                 {
                     // options.ConfigureDbContext = builder => builder.UseSqlite(connectionString);
-                    options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString, config => config.MigrationsAssembly(typeof(Startup).Assembly.FullName));
+                    options.ConfigureDbContext = builder => builder.UseMySql(connectionString, config => config.MigrationsAssembly(typeof(Startup).Assembly.FullName));
                 })
                 // this adds the operational data from DB (codes, tokens, consents)
                 .AddOperationalStore(options =>
                 {
                     // options.ConfigureDbContext = builder => builder.UseSqlite(connectionString);
-                    options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString, config => config.MigrationsAssembly(typeof(Startup).Assembly.FullName));
+                    options.ConfigureDbContext = builder => builder.UseMySql(connectionString, config => config.MigrationsAssembly(typeof(Startup).Assembly.FullName));
 
                     // this enables automatic token cleanup. this is optional.
                     options.EnableTokenCleanup = true;
