@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace identity_server_4.Device
+namespace IdentityServer4.Quickstart.UI.Device
 {
     [Authorize]
     [SecurityHeaders]

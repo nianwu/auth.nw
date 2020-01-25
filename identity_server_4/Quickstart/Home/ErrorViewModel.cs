@@ -4,7 +4,7 @@
 
 using IdentityServer4.Models;
 
-namespace identity_server_4
+namespace IdentityServer4.Quickstart.UI
 {
     public class ErrorViewModel
     {
