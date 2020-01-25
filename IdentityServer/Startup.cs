@@ -1,4 +1,5 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
+﻿using System.Linq;
+// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
@@ -21,14 +22,13 @@ namespace IdentityServer
         public void ConfigureServices(IServiceCollection services)
         {
             // uncomment, if you want to add an MVC-based UI
-            //services.AddControllersWithViews();
+            services.AddControllersWithViews();
 
             var builder = services.AddIdentityServer()
-                // .AddInMemoryIdentityResources(Config.Ids)
+                .AddInMemoryIdentityResources(Config.Ids)
                 .AddInMemoryApiResources(Config.Apis)
-                .AddInMemoryClients(Config.Clients);
-
-                
+                .AddInMemoryClients(Config.Clients)
+                .AddTestUsers(Config.TestUsers.ToList());
 
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
@@ -42,17 +42,17 @@ namespace IdentityServer
             }
 
             // uncomment if you want to add MVC
-            //app.UseStaticFiles();
-            //app.UseRouting();
+            app.UseStaticFiles();
+            app.UseRouting();
 
             app.UseIdentityServer();
 
             // uncomment, if you want to add MVC
-            //app.UseAuthorization();
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapDefaultControllerRoute();
-            //});
+            app.UseAuthorization();
+            app.UseEndpoints(endpoints =>
+            {
+               endpoints.MapDefaultControllerRoute();
+            });
         }
     }
 }

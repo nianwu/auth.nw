@@ -59,6 +59,11 @@ namespace webapi
             {
                 endpoints.MapControllers();
             });
+
+            app.UseCors(config => config
+                .AllowAnyOrigins()
+                .AllowAnyHeader()
+                .AllowAnyMethod());
         }
     }
 }

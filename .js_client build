@@ -1,0 +1,3 @@
+cd ./js_client/wwwroot \
+&& npm i oidc-client \
+&& cp node_modules/oidc-client/dist/oidc-client.js .
