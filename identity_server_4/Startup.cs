@@ -55,12 +55,14 @@ namespace identity_server_4
                 // this adds the config data from DB (clients, resources, CORS)
                 .AddConfigurationStore(options =>
                 {
-                    options.ConfigureDbContext = builder => builder.UseSqlite(connectionString);
+                    // options.ConfigureDbContext = builder => builder.UseSqlite(connectionString);
+                    options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString, config => config.MigrationsAssembly(typeof(Startup).Assembly.FullName));
                 })
                 // this adds the operational data from DB (codes, tokens, consents)
                 .AddOperationalStore(options =>
                 {
-                    options.ConfigureDbContext = builder => builder.UseSqlite(connectionString);
+                    // options.ConfigureDbContext = builder => builder.UseSqlite(connectionString);
+                    options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString, config => config.MigrationsAssembly(typeof(Startup).Assembly.FullName));
 
                     // this enables automatic token cleanup. this is optional.
                     options.EnableTokenCleanup = true;
