@@ -1,0 +1,1 @@
+docker run --name auth_nw_mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d -p 3306:3306 -p 33060:33060 mysql
