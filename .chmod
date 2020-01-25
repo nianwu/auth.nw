@@ -1,1 +1,1 @@
-chmod +x '.webapi run' '.is run' '.client run' '.js_client run' '.js_client build' '.mysql build'
+chmod +x '.webapi run' '.is run' '.client run' '.js_client run' '.js_client build' '.mysql build' '.ef database update' '.ef hosting init'
