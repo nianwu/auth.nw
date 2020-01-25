@@ -1,0 +1,2 @@
+dotnet ef database update -c ConfigurationDbContext -p identity_server_4 \
+&& dotnet ef database update -c PersistedGrantDbContext -p identity_server_4
