@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace identity_server_4.identity_server_4.Migrations.ConfigurationDb
+namespace identity_server_4.Migrations.ConfigurationDb
 {
     public partial class Config : Migration
     {

@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace identity_server_4.identity_server_4.Migrations.PersistedGrantDb
+namespace identity_server_4.Migrations.PersistedGrantDb
 {
     [DbContext(typeof(PersistedGrantDbContext))]
-    [Migration("20200127124916_Grants")]
-    partial class Grants
+    [Migration("20200127131131_Config")]
+    partial class Config
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
