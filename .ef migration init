@@ -1,0 +1,3 @@
+dotnet ef migrations add Config -c ConfigurationDbContext -p identity_server_4/ -o Migrations/ConfigurationDb \
+&& dotnet ef migrations add Config -c PersistedGrantDbContext -p identity_server_4/ -o Migrations/PersistedGrantDb \
+&& ./.ef\ database\ update
