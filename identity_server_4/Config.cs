@@ -26,7 +26,6 @@ namespace identity_server_4
                 new ApiResource("api1", "My API #1")
             };
 
-
         public static IEnumerable<Client> Clients =>
             new Client[]
             {

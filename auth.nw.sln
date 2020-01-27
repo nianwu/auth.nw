@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "js_client", "js_client\js_c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "identity_server_4", "identity_server_4\identity_server_4.csproj", "{5A5FDE4C-3A0B-4525-A096-3FB67943BAF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mysqltest", "mysqltest\mysqltest.csproj", "{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{5A5FDE4C-3A0B-4525-A096-3FB67943BAF6}.Release|x64.Build.0 = Release|Any CPU
 		{5A5FDE4C-3A0B-4525-A096-3FB67943BAF6}.Release|x86.ActiveCfg = Release|Any CPU
 		{5A5FDE4C-3A0B-4525-A096-3FB67943BAF6}.Release|x86.Build.0 = Release|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Debug|x64.Build.0 = Debug|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Debug|x86.Build.0 = Debug|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Release|x64.ActiveCfg = Release|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Release|x64.Build.0 = Release|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Release|x86.ActiveCfg = Release|Any CPU
+		{935D608A-9503-4B80-ACCC-6C4D4E3BAEC3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
